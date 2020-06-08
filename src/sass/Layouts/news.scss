@@ -1,0 +1,36 @@
+.news{
+    .row{
+        margin:0;
+        .col-md-6{
+            padding:0;
+            position: relative;
+          img{
+              width:100%;
+          }
+          .desk{
+              position: absolute;
+              top:10%;
+              padding: 10%;
+              .post-sub-title{
+                  font-size: 16px;
+                  letter-spacing: 1px;
+              }
+              h3{
+                a{
+                    letter-spacing: 2px;
+                    color:white;
+                    font-size: 24px;
+                    text-decoration: none;
+                }
+                margin-bottom: 30px;
+              }
+              p{
+                  line-height: 30px;
+                  font-size: 15px;
+              }
+              
+          }
+
+        }
+    }
+}

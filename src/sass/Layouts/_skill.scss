@@ -1,0 +1,41 @@
+.skill{
+    width: 100%;
+    height:100%;
+    background-image: url('../../Assets/img/skill.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    .row{
+        margin:0;
+        .skill__content1{
+            h2{
+                font-size:24px;
+                letter-spacing: 6px;
+                line-height: 657px;
+                margin-bottom: 0;
+            }
+        }
+        .skill__content2{
+            background: rgba(0,0,0,0.5);
+            position: relative;
+            .damn{
+                position: absolute;
+                padding-left:45px;
+                width:75%;
+                top:50%;
+                transform: translateY(-50%);
+                h2{
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size:15px;
+                    margin-bottom: 30px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

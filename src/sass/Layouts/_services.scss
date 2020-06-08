@@ -1,0 +1,70 @@
+.services{
+    background-color: white;
+    padding: 100px 0;
+    .row{
+        margin: 0;
+        .services__content{
+            text-align: center;
+            margin:0 auto 100px ;
+            h3{
+                @include styleText($color-black-0,$fs-3);
+                letter-spacing: 2px;
+            }
+            .p-top-30{
+                padding-top:30px;
+                width:75%;
+                margin: 0 auto;
+            }
+            .half-txt{
+                @include styleText($color-gray-0,$fs-0);
+                line-height:25px;
+            }
+        }
+        .services__detail{
+            .row{
+               padding: 0 45px;
+                .col-md-4{
+                    padding:0;
+                    .services__box{
+                        transition: all .3s;
+                        margin-bottom: -1px;
+                        margin-left: -1px;
+                        padding: 50px;
+                        border: 1px solid #f2f2f2;
+                        .icon{
+                            font-size: 36px;
+                            text-align: center;
+                            padding-bottom: 30px;
+                            transition: all .3s;
+                        }
+                        h4{
+                            margin-bottom: 20px;
+                            font-size: 18px;
+                            color:#333;
+                            text-align: center;
+                            letter-spacing: 1px;
+                            line-height: 1.5;
+                            transition: all .3s;
+                        }
+                        .desc{
+                            font-size: 15px;
+                            color:#7e7e7e;
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                        &:hover{
+                            background-color: #323232;
+                            .icon{
+                                color:#d6b161;
+                            }
+                            h4{
+                                color:white
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

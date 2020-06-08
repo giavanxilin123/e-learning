@@ -1,0 +1,44 @@
+.drop{
+    background-color: white;
+    padding: 100px 0;
+    .row{
+        margin: 0;
+        justify-content: center;
+        .drop__content{
+            text-align: center;            
+            margin:0 auto 100px ;
+            h3{
+                @include styleText($color-black-0,$fs-3);
+                letter-spacing: 2px;
+            }
+            .p-top-30{
+                padding-top:30px;
+                width:70%;
+                margin: 0 auto;
+            }
+            .half-txt{
+                @include styleText($color-gray-0,$fs-0);
+                line-height:25px;
+            }
+        }
+        input{
+            border-radius: initial;
+            box-shadow: none;
+            
+        }
+        textarea{
+            height: 87px;
+            border-radius: initial;
+            box-shadow: none;
+        }
+        button{
+            height: 36px;
+            background-color: #222222;
+            color: #fff;
+            font-size: 12px;
+            border:none;
+            border-radius: initial;
+            letter-spacing: 1px;
+        }
+    }
+}

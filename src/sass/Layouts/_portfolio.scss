@@ -1,0 +1,132 @@
+.portfolio{
+    background-color: white;
+    padding-top: 100px;
+    .row{
+        margin: 0;
+        .portfolio__content{
+        
+            text-align: center;
+            margin:0 auto 100px ;
+            h3{
+                @include styleText($color-black-0,$fs-3);
+                letter-spacing: 2px;
+            }
+            .p-top-30{
+                padding-top:30px;
+                width:75%;
+                margin: 0 auto;
+            }
+            .half-txt{
+                @include styleText($color-gray-0,$fs-0);
+                line-height:25px;
+            }
+        } 
+    }
+    .portfolio__detail{
+        padding-bottom:10px;
+        .filters{
+            text-align: center;
+            ul{
+
+                margin-bottom: 40px;
+                list-style: none;
+                li {
+                    display: inline;
+                    padding: 10px 25px;
+                    font-size: 14px;
+                    color: #a9a8a8;
+                    font-weight: 400;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    letter-spacing: .2em;
+                    &:hover{
+                    color:#222;
+                    }
+                }
+                li.active {
+                    color: #222;
+                    border: 1px solid #222;
+                    border-radius: 15px;
+                }
+            }
+        }
+        .content{
+            .col-md-3{
+                padding:10px;
+                .portfolio__image{
+                    position: relative;
+                    img{
+                        width:100%;
+                    }
+                    .portfolio__hover{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: 0;
+                        transition: all .3s;
+                        opacity: 0;
+                        border: 20px solid rgba(0, 0, 0, 0.1);
+                        background-color: rgba(255, 255, 255, 0.9);
+                        .icon-basic_magnifier{
+                            position: absolute;
+                            font-size: 35px;
+                            color:#323232;
+                            transform: translateX(50%);
+                            top:30px;
+                            right:50%;
+                            opacity: 0;
+                            transition: all .3s;
+                        }
+                        .desk{
+                            position: absolute;
+                            bottom:30px;
+                            left: 40%;
+                            transform: translateX(-30%);
+                            text-align: center;
+                            transition: all .3s;
+                            
+                            .lightbox{
+                                margin-bottom: 5px;
+                                letter-spacing: 4px;
+                                font-size: 14px;
+                                color:#333;
+                                text-decoration: none;
+                                transition: all .5s;
+                                &:hover{
+                                    color:#d6b161;
+                                }
+                            }
+                            .category{
+                                letter-spacing: 3px;
+                                color: #757575;
+                                font-size: 12px;
+                                text-decoration: none;
+                                transition: all .5s;
+                                &:hover{
+                                    color:#d6b161;
+                                }
+                            }
+                        }
+                        &:hover{
+                            opacity:1;
+                            .icon-basic_magnifier{
+                                transform: translateY(30px) translateX(50%);
+                                opacity: 1;
+                                
+                            }
+                            .desk{
+                                transform: translateX(-30%) translateY(5px);
+                                opacity:1;
+                               
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+          
+    }
+}

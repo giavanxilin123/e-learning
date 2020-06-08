@@ -1,0 +1,40 @@
+.subscribe{
+    padding: 100px 0;
+    background-color: #f8f8f8;
+    .subscribe__content{
+        h3{
+            font-size: 24px;
+            margin:0;
+            letter-spacing: 1px;
+            color: #d6b161;
+        }
+        p{
+            margin: 10px 0 20px;
+            font-size: 15px;
+            color:#7e7e7e;
+        }
+    }
+    .subscribe__form {
+        display:flex;
+        justify-content: center;
+        input{
+        height:52px;
+        width:80%;
+        margin: 0 5px;
+        padding: 5px 10px;
+        font-size: 14px;
+        box-shadow: none;
+        border:none;
+        }
+        button{
+        margin: 0 5px;
+        background-color: #222;
+        color:#fff;
+        border: 1px solid #222;
+        border-radius: 4px;
+        padding: 15px 30px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        }
+    }
+}

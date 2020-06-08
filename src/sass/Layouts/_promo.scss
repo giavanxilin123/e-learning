@@ -1,0 +1,32 @@
+.promo{
+    padding: 60px 0;
+    background-color: #222;
+    .col-md-12{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .promo-info{
+            line-height: 2;
+            h3{
+                font-size: 24px;
+                letter-spacing: 1px;
+                .theme-color{
+                    color:#d6b161;
+                }
+            }
+        }
+        .promo-btn{
+            .btn-rounded{
+                border-radius: 4px;
+                color: #fff;
+                background: rgba(255, 255, 255, .2);
+                font-size: 14px;
+                padding: 15px 30px;
+                transition: all .3s;
+                &:hover{
+                    background-color: #d6b161;
+                }
+            }
+        }
+    }
+}

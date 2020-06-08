@@ -1,0 +1,47 @@
+.numberIcon{
+    background-image: url('../../Assets/img/number.jpg');
+    height:476px;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    padding: 100px 0;
+    position: relative;
+    .container{
+        position: absolute;
+        top:50%;
+        right: 50%;
+        transform: translateY(-50%) translateX(50%);
+        .number__item{
+            position: relative;
+            display: flex;
+            .icon{
+                font-size: 36px;
+                margin-top: 10px;
+            }
+            .number__detail{
+                padding-left: 70px;
+                h3{
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                }
+                p{
+                    font-size: 36px;
+                    margin:0;
+                }
+            }
+            .number__detail::before{
+                background: rgba(255, 255, 255, .4);
+                position: absolute;
+                top: 0;
+                left: 75px;
+                width: 1px;
+                height: 80px;
+                content: "";
+                transform: rotate(30deg);
+            }
+        }
+    }
+    }
+   

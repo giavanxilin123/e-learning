@@ -1,0 +1,207 @@
+@media(max-width:992px){
+    // paralax
+    .paralax{
+        .paralax__content{
+            padding-top: 100px !important;
+            padding-left: 0 !important;
+        }
+        .carousel-item{
+           img{
+            display:none;
+           } 
+        }
+    }
+    // video
+    .video{
+        iframe{
+            width:660px !important;
+            height:345px !important;     
+        }
+    }
+   
+}
+@media(max-width:768px){
+    // design
+    .design{
+        padding: 50px 0 !important;
+        .design__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+        .col-md-4{
+            padding: 30px 30px !important;
+            .design__item{
+                .icon{
+                    top:0 !important;
+                }
+            }
+        }
+    }
+     // skill
+    .skill{
+        .skill__content1{
+            h2{
+                line-height: 450px !important;
+                font-size: 18px !important;
+            }  
+        }
+        .skill__content2{
+            background-color:initial !important;
+            .damn{
+                position:initial !important;
+                transform: initial !important;
+            }
+        }
+    }
+    // team
+    .team{
+        padding: 50px 0 !important;
+        .team__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+    }
+    // portfolio
+    .portfolio{
+        padding-top: 50px !important;
+        .portfolio__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+    }
+    // promo
+    .promo{
+        padding: 35px 0 !important;
+        .col-md-12{
+            display:initial !important;
+            h3{
+                font-size: 18px !important;
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+    // services
+    .services{
+        padding: 50px 0 !important;
+        .services__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+    }
+   
+    // feature
+    .feature{
+        padding: 50px 0 !important;
+        .feature__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+    }
+    // numberIcon
+    .numberIcon{
+        height: 600px !important;
+        .col-md-4{
+            padding: 20px !important;
+        }
+    }
+    // blog
+    .blog{
+        padding: 50px 0 !important;
+        .blog__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+        .col-md-4{
+            img{
+                
+                padding-bottom: 150px !important;;
+            }
+            .blog__detail{
+                h4{
+                    margin-bottom: 120px !important;
+                }
+            }
+        }
+    }
+    // testimonial
+    .testimonial{
+        padding: 50px 0 !important;
+    }
+    // video
+    .video{
+        padding: 50px 0 !important;
+        .video__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+        iframe{
+            width:100% !important;
+            height:250px !important;
+        } 
+    }
+  
+    // news
+    .news{
+        .desk{
+            padding:10px !important;
+            h3{
+                a{
+                    font-size: 18px !important;
+                }
+            }
+        }
+       
+    }
+    // price
+    .price{
+        padding: 50px 0 !important;
+        .price__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+    }
+    // clients
+    .clients{
+        padding: 50px 0 !important;
+        .clients__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+    }
+    // contact
+    .massiveContact{
+        height:700px !important;
+    }
+    // drop
+    .drop{
+        padding: 50px 0 !important;
+        .drop__content{
+            margin: 0 auto 50px !important;
+            p{
+                width:85% !important;
+            }
+        }
+    }
+    // container
+    .container {
+        max-width: 650px;
+    }
+}

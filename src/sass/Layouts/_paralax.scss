@@ -1,0 +1,63 @@
+.paralax{
+    position: relative;
+    background-image: url('../../Assets//img/paralax.jpg');
+    height:500px;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    .carousel{
+        .carousel-item{
+            position: relative;
+            img{
+                position: absolute;
+                bottom:0;
+            }
+            .paralax__content{
+                
+                padding-top:200px;
+                padding-left:430px;
+                h4{
+                    margin-bottom:30px;
+                    font-size: 18px;
+                    color:#d6b161;
+                    letter-spacing: 2px;
+                }
+                p{
+                    margin-bottom: 30px;
+                    font-style: italic;
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+                .btn-rounded{
+                    color: #fff;
+                    background: rgba(255, 255, 255, .2);
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    padding: 10px 20px;
+                    transition: all .3s;
+                    &:hover{
+                        background-color: #d6b161;
+                    }
+                }
+            }
+        }
+        .carousel-indicators{
+          justify-content: flex-end;
+          margin:0;
+          bottom:20px;
+          li{
+              width:12px;
+              height:12px;
+              border-radius: 50%;
+              margin:7px;
+          }
+        }
+    }
+    
+}
+  
+
+
+

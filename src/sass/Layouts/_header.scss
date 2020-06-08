@@ -1,0 +1,46 @@
+.massiveHeader{
+    background-color: #0a0a0a;
+   
+    top:0;
+    width: 100%;
+    z-index:100;
+    transition: .4s;
+
+    .logout{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px
+    }
+    .navbar{
+        transition: .4s;
+
+        .navbar-collapse {
+            justify-content: flex-end;
+            .active{
+                .nav-link{
+                    @include styleText($color-yellow-0,$fs-1);
+                }
+            }
+            .nav-link{
+                letter-spacing: .5px;
+                padding: 0 13px;
+                @include styleText($color-black-1,$fs-1);
+                &:hover{
+                    @include styleText($color-yellow-0,$fs-1);
+                }
+                &:focus{
+                    @include styleText($color-yellow-0,$fs-1);
+                }   
+            }
+        }
+        .navbar-brand{
+            padding:0;
+            img{
+                transition: .4s;
+                width: 120px;
+            }
+        }
+    }
+   
+}
+

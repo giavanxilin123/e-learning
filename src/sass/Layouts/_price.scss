@@ -1,0 +1,92 @@
+.price{
+    background-color: white;
+    padding: 100px 0;
+    .row{
+        margin: 0 ;
+        .price__content{
+            text-align: center;
+            margin:0 auto 100px ;
+            h3{
+                @include styleText($color-black-0,$fs-3);
+                letter-spacing: 2px;
+            }
+            .p-top-30{
+                padding-top:30px;
+                width:65%;
+                margin: 0 auto;
+            }
+            .half-txt{
+                @include styleText($color-gray-0,$fs-0);
+                line-height:25px;
+            }
+        }
+        .col-md-4{
+            .price-col{
+                padding:50px;
+                text-align: center;
+                border: 1px solid #e8e8e8;
+                h1{
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    margin-bottom:30px;
+                }
+                .p-value{
+                    padding: 25px 0;
+                    margin-bottom: 40px;
+                    border-top: 1px solid #e5e5e5;
+                    border-bottom: 1px solid #e5e5e5;
+                    .dollar{
+                        font-size: 42px;
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+                    .duration{
+                        font-size: 12px;
+                    }
+                }
+                ul{
+                    margin-bottom: 40px;
+                    list-style: none;
+                    li{
+                        margin-bottom: 15px;
+                    }
+                }
+                .p-btn{
+                    padding: 15px 20px;
+                    color: #323232;
+                    text-decoration: none;
+                    border: 1px solid #e8e8e8;
+                    display:inherit;
+                    transition: all .3s;
+                    &:hover{
+                        background-color: #323232;
+                        color:white
+                    }
+                }
+            }
+            .black-price{
+                background-color: #222;
+                color:#7d7d7d;
+                .p-value{
+                    border-top: 1px solid #7d7d7d;
+                    border-bottom: 1px solid #7d7d7d;
+                    color:white;
+                }
+                h1{
+                    color: #d6b161;
+                }
+                .p-btn{
+                    background-color: #fff;
+                    color:#222;
+                    transition: all .3s;
+                    &:hover{
+                        background-color: #d6b161;
+                        color:white;
+                        border:1px solid #d6b161;
+                    }
+                }
+            }
+        }
+    }
+}

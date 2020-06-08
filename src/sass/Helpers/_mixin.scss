@@ -1,0 +1,47 @@
+@mixin styleText($color,$fs){
+    color: $color;
+    font-size: $fs;
+}
+@mixin styleDot($br,$border,$bgc){
+    width:9px;
+    height:9px;
+    border-radius: $br;
+    border: 1px solid $border;
+    opacity:1;
+    background-color:$bgc;
+}
+@mixin styleProgress{
+        height: 20px;
+        line-height: 15px;
+        background: #606060;
+        margin-top:10px;
+        margin-bottom: 50px;
+        overflow: visible;
+        letter-spacing: 1px;
+        border-radius: 0;
+            .progress-bar{
+            position: relative;
+            height:100%;
+            .progress-value{
+                font-size: 10px;
+                color: #222;
+                position: absolute;
+                top: -28px;
+                right: -5px;
+                border-radius:30px;
+                background-color: #a4a4a4;
+                padding: 0 8px;
+                height:20px;
+                width:34px;
+                line-height: 18px;
+            }
+            .progress-title{
+                padding-left: 10px;
+                text-align: left;
+                font-size: 10px;
+                color: #222;
+                margin:0;
+            }   
+        }
+}
+

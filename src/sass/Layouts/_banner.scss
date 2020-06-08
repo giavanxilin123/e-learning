@@ -1,0 +1,42 @@
+.massiveBanner{
+    .carousel-indicators{
+       bottom:15%;
+       .active{
+           background-color: white;
+       }
+        li{
+            @include styleDot($br-circle,$color-white-0,$bgc-trans);
+        }
+    }
+    .carousel-item{
+        position: relative;
+        .carousel__content{
+            position: absolute;
+            top:40%;
+            left:12%;
+            h1{
+                letter-spacing: 2px;
+                line-height: 1.5;
+                margin-bottom: 30px;
+                font-size: 36px;
+                span{
+                    font-size: 18px;
+                }
+            }
+            p{  
+                line-height: 30px;
+                @include styleText($color-gray-0,$fs-0);
+            }
+        }
+    }
+    .carousel-control-prev{
+        cursor:url('../../Assets/img/arrow_left.png'), auto;
+        width:35%;
+    }
+    .carousel-control-next{
+        cursor:url('../../Assets/img/arrow_right.png'), auto;
+        width:35%;
+    }
+
+}
+
