@@ -4,31 +4,30 @@ import { connect } from 'react-redux'
 import { login } from '../../Redux/Actions/user'
 import '../../sass/main.scss'
 class SignIn extends Component {
-
-
-
-    render() {
+    render() { 
         return (
             <Formik
                 initialValues={{
                     taiKhoan: "",
                     matKhau: ""
                 }}
-                onSubmit={values => { this.props.dispatch(login(values)) 
-                                        this.props.history.push("/")}}
+                onSubmit={values => { this.props.dispatch(login(values,this.props.history)) 
+                        }}
                 render={({ handleChange }) => (
                     <div className="login">
-                        <Form className="w-50 mx-auto ">
+                        <Form className=" mx-auto ">
                             <h1 className="text-center mt-3">Login</h1>
                             <div className="form-group">
-                                <label>Account</label>
+                                <label>Tài khoản</label>
                                 <Field type="text" name="taiKhoan"  onChange={handleChange} className="form-control" ></Field>
                             </div>
                             <div className="form-group">
-                                <label>Password</label>
+                                <label>Mật khẩu</label>
                                 <Field type="password" name="matKhau" onChange={handleChange} className="form-control"></Field>
                             </div>
-                            <button className="btn btn-warning" >Đăng Nhập</button>
+                            <div className="form-group button">
+                            <button className="btn btn-warning" >Login</button>
+                            </div>
                         </Form>
                     </div>
 

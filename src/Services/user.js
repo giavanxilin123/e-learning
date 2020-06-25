@@ -14,7 +14,7 @@ export const signUpUserSchema = yup.object().shape({
  class UserService {
      signUp(data){
        return axios({
-            method:"POST",
+            method:"GET",
             url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy`,
             data
         });

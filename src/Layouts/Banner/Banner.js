@@ -16,7 +16,7 @@ export default class Banner extends Component {
                         <div className="carousel-item active">
                             <img src={bs1} className="d-block w-100" alt="bs1" style={{ height: 657 }} />
                             <div className="carousel__content animated fadeInDown ">
-                                <h1><span>HI THERE ! </span><br /> WE ARE MASSIVE</h1>
+                                <h1><span>HI THERE ! </span><br /> WE ARE E-LEARNING</h1>
                                 <p>Integer nec nulla bibendum, venenatis elit vel, vulputate nulla. Quisque lacinia nisi
                                 erat,
             <br />ut scelerisque augue pharetra et. Aliquam efficitur lacus eget.</p>

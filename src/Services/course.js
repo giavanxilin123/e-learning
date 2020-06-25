@@ -14,6 +14,7 @@ export default class CourseService{
      return axios({
         method:'GET',
         url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${id}`,
+        data: id
     })
  }
  render(){

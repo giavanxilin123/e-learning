@@ -12,6 +12,7 @@ import { FETCH_CREDENTIALS } from './Redux/Actions/type';
 import {HomeTemplate} from '../src/Templates/HomeTemplate'
 import {SignUpTemplate} from '../src/Templates/SignUpTemplate'
 import Header from './Layouts/Header/Header'
+import DemoHook from './DemoHook';
 class App extends Component {
   render(){
     
@@ -21,9 +22,10 @@ class App extends Component {
         <Switch>
           {/* Nhớ chữ component viết hoa */}
           <HomeTemplate exact path='/' exact Component={HomeScreen} ></HomeTemplate>
-          <Route exact path="/detail" component={CourseDetailScreen}></Route>
-          <SignUpTemplate path='/signup' exact Component={Signup} ></SignUpTemplate>
+          <Route exact path="/detail/:id" component={CourseDetailScreen}></Route>
+          <Route path='/signup' exact component={Signup} ></Route>
           <Route path="/signin" exact component={SignIn}></Route>
+          <Route path="/demo-hook" exact component={DemoHook}></Route>
         </Switch>
         </BrowserRouter>
        
