@@ -18,11 +18,11 @@ export default class Signup extends Component {
                 console.log(err)
             })
     }
-
     render() {
         return (
-            <div className="w-50 mx-auto">
-                <h1 className="display-4 text-center">Sign Up</h1>
+            <div className="signup">
+                  <div className=" mx-auto">
+                <h1 className=" title display-4 text-center">Sign Up</h1>
 
                 <Formik
                     initialValues={{
@@ -89,11 +89,13 @@ export default class Signup extends Component {
                             </div>
 
                             <div className="text-center">
-                                <button className="btn btn-success" >Submit</button>
+                                <button className="btn btn-warning" >Submit</button>
                             </div>
                         </Form>)}></Formik>
 
             </div>
+            </div>
+          
         )
     }
 }

@@ -6,9 +6,9 @@ import {fetchCourses} from '../../Redux/Actions/course'
  class HomeScreen extends Component {
     render() {
         return (
-            <div>
-                <h1 className="display-4">Danh Sách Khóa Học</h1>
-                <div className="container">
+            <div className="homescreen">
+                <h1 className="display-4 text-center p-4 ">Danh Sách Khóa Học</h1>
+                <div className="container mt-2">
                     <div className="row">
                       {this.props.courseList.map((item,index)=>{
                           return   <div className="col-3" key={index}>

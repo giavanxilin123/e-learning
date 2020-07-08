@@ -6,7 +6,9 @@
 
 @import './Components/progress';
 
-@import './Layouts//login';
+@import './Layouts/homescreen';
+@import './Layouts/login';
+@import './Layouts/signup';
 @import './Layouts/header';
 @import './Layouts/banner';
 @import './Layouts/design';
@@ -28,3 +30,4 @@
 @import './Layouts/contact';
 @import './Layouts/drop';
 @import './Layouts/footer';
+

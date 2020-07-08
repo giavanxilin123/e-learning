@@ -7,6 +7,11 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import rootReducer from './Redux/Reducers/root'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
+import  './css/animate.min.css'
+import './css/linea-icon.css'
+import './css/owl.carousel.min.css'
+import './css/owl.theme.default.min.css'
+
 const store = createStore(
     rootReducer,
     

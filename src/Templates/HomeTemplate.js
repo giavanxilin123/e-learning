@@ -2,6 +2,7 @@ import React,{Fragment} from 'react';
 import {Route} from 'react-router-dom';
 import Header from '../Layouts/Header/Header'
 import Banner from '../Layouts/Banner/Banner'
+import Design from '../Layouts/Design/Design'
 
 const HomeLayout = (props) => {
     return (
@@ -9,6 +10,7 @@ const HomeLayout = (props) => {
             <Header />
             <Banner></Banner>
             {props.children}
+            <Design></Design>
         </Fragment>
     )
 };

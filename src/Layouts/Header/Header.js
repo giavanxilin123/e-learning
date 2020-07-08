@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../../sass/main.scss'
+
 import logo from '../../Assets/img/logo-dark.png'
 import {FETCH_CREDENTIALS} from '../../Redux/Actions/type'
 import {createAction} from '../../Redux/Actions/index'
@@ -26,9 +27,9 @@ class Header extends Component {
                             <li className="nav-item">
                                 <Link className="nav-link  " to="/">HOME</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link  " to="/detail">DETAIL</Link>
-                            </li>
+                            {/* <li className="nav-item">
+                                <Link className="nav-link " to="/detail">DETAIL</Link>
+                            </li> */}
                             
                             {this.props.credentials ? 
                             <>
